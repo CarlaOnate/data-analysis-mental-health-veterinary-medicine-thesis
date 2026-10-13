@@ -10829,236 +10829,6 @@ Professors (24) vs teaching style (23): Spearman ρ = 0.60
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6675e471">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Strengths-in-the-students'-own-words">Strengths in the students' own words<a class="anchor-link" href="#Strengths-in-the-students'-own-words">¶</a></h3><p><strong>Columns used</strong></p>
-<ul>
-<li>Column 54, <em>"What strengths, and in which contexts do they help?"</em>: the <strong>24 neurodivergent students</strong> who wrote an answer. The 2 non-ND students who answered are left out.</li>
-</ul>
-<p><strong>How the categorization was made</strong></p>
-<ol>
-<li>All 24 answers were read in full before giving any category, so the categories come from the answers and not from a list made in advance.</li>
-<li>Each answer was given <strong>one context</strong> (where the strength helps) and <strong>one or more themes</strong> (what the strength is).</li>
-<li>The categories are written in <code>STRENGTH_CODING</code> in the cell below, next to the row number and the first words of the answer. The code checks that every ND answer has categories and that each row matches its answer, so a category cannot end up on the wrong student.</li>
-</ol>
-<p><strong>Why these contexts</strong></p>
-<ul>
-<li>Question 54 asks <em>"in which contexts do they help?"</em>, so the context is one of the two things the question asks for.</li>
-<li>Columns 52 and 53 already split strengths into <strong>as a student</strong> and <strong>as a future vet</strong>. Using the same split makes the open answers comparable with those two questions:<ul>
-<li><strong>Studying</strong>: learning, exams or university tasks (matches column 52)</li>
-<li><strong>Vet practice</strong>: clinical work, clients, animals or diagnosis (matches column 53)</li>
-<li><strong>Both</strong>: the answer names a study context and a vet-practice context</li>
-<li><strong>General</strong>: the answer names no specific context. This category exists so that answers are not forced into a context the student did not mention.</li>
-</ul>
-</li>
-<li>Each answer gets only one context, so the 24 answers add up to 24 (5 studying, 6 vet practice, 5 both, 8 general).</li>
-</ul>
-<p><strong>Why these themes</strong></p>
-<ul>
-<li>The themes were built from the answers (bottom-up): strengths that describe the same thing in different words were grouped under one name. For example <em>hyperfocus</em>, <em>special interest</em> and <em>more passion for what I love</em> became <strong>Hyperfocus &amp; passion for interests</strong>.</li>
-<li>Strengths that sound close but describe different things were kept apart. <strong>Attention to detail</strong> is about noticing small things, while <strong>pattern recognition</strong> is about linking many signs into one answer (for example a diagnosis).</li>
-<li>Small themes, such as <strong>Adaptability &amp; resilience</strong> (1 answer), were kept instead of being put in an "other" group, because they describe something no other theme covers.</li>
-<li>This gave <strong>9 themes</strong>. One answer can name several strengths, so it can count in more than one theme (24 answers → 37 mentions).</li>
-</ul>
-<p><strong>Limits</strong></p>
-<ul>
-<li>The categories are one person's reading of the answers. A second person categorizing the same answers with the rules above, and comparing the results, would make them more reliable.</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=b50adb2a">
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>answer</th>
-<th>context</th>
-<th>themes</th>
-</tr>
-<tr>
-<th>row</th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>Being on time, achieving the tasks I need to do</td>
-<td>Studying</td>
-<td>Organisation &amp; reliability</td>
-</tr>
-<tr>
-<th>2</th>
-<td>I think the biggest strength is pattern-recognition. I think because the way my brain is set up, it allows me to connect information more clearly and make connections others may not arrive to as quickly. However, on the flip side of this, sometimes I make connections that may not necessarily be there so it could also detract from my abilities at times. In addition, I think being neurodivergent and struggling with mental illness allows me to have a greater degree of empathy and flexibility towards pet owners.</td>
-<td>Both</td>
-<td>Pattern recognition &amp; problem solving, Empathy &amp; understanding others</td>
-</tr>
-<tr>
-<th>5</th>
-<td>Pattern recognition and identifying diseases</td>
-<td>Vet practice</td>
-<td>Pattern recognition &amp; problem solving</td>
-</tr>
-<tr>
-<th>7</th>
-<td>Taking special interest knowing more about a topic than is expected</td>
-<td>Studying</td>
-<td>Hyperfocus &amp; passion for interests</td>
-</tr>
-<tr>
-<th>13</th>
-<td>My adaptability is improving, and I've become more resilient. My creativity is also developing, and overall, my flexibility has increased.</td>
-<td>General</td>
-<td>Adaptability &amp; resilience, Creative, out-of-the-box thinking</td>
-</tr>
-<tr>
-<th>18</th>
-<td>I have a limitless amount of energy which is great for socialising and long work shifts</td>
-<td>Vet practice</td>
-<td>Energy &amp; working under pressure</td>
-</tr>
-<tr>
-<th>19</th>
-<td>It can be incredibly helpful to think outside the box, or have increased energy for tasks you're interested in.</td>
-<td>General</td>
-<td>Creative, out-of-the-box thinking, Hyperfocus &amp; passion for interests</td>
-</tr>
-<tr>
-<th>24</th>
-<td>I tend to hyperfocus on learning about the animals I love and it also makes me be more passionate about my work</td>
-<td>Both</td>
-<td>Hyperfocus &amp; passion for interests</td>
-</tr>
-<tr>
-<th>26</th>
-<td>More passion for what I love</td>
-<td>General</td>
-<td>Hyperfocus &amp; passion for interests</td>
-</tr>
-<tr>
-<th>29</th>
-<td>I am very detail oriented, retain information very easily and like complex cases. However, I lack in social skills significantly.</td>
-<td>Both</td>
-<td>Attention to detail &amp; observation, Learning &amp; memory</td>
-</tr>
-<tr>
-<th>30</th>
-<td>More empathy. Doing thinks different in the future. Want to change things to the better</td>
-<td>Vet practice</td>
-<td>Empathy &amp; understanding others, Creative, out-of-the-box thinking</td>
-</tr>
-<tr>
-<th>32</th>
-<td>I can hyperfocus in situation and see solution not otherwise considered , also I can see problem before they are realized to be a problem.</td>
-<td>General</td>
-<td>Hyperfocus &amp; passion for interests, Pattern recognition &amp; problem solving</td>
-</tr>
-<tr>
-<th>33</th>
-<td>Understanding people and why they might think differently -&gt; more patience, more understanding</td>
-<td>General</td>
-<td>Empathy &amp; understanding others</td>
-</tr>
-<tr>
-<th>36</th>
-<td>Hyperfocused on specialized interest and learning that information very quickly</td>
-<td>Studying</td>
-<td>Hyperfocus &amp; passion for interests, Learning &amp; memory</td>
-</tr>
-<tr>
-<th>48</th>
-<td>Paying attention to detail, circiling back to a diagnosis that could've been something different.</td>
-<td>Vet practice</td>
-<td>Attention to detail &amp; observation, Pattern recognition &amp; problem solving</td>
-</tr>
-<tr>
-<th>50</th>
-<td>An outside of the box thinking methods</td>
-<td>General</td>
-<td>Creative, out-of-the-box thinking</td>
-</tr>
-<tr>
-<th>56</th>
-<td>I think it gives a different perspective when you are working with living beings that don't communicate like humans. Being neurodivergent I think it's easier to understand animals than neurotypical humans</td>
-<td>Vet practice</td>
-<td>Empathy &amp; understanding others</td>
-</tr>
-<tr>
-<th>58</th>
-<td>My brain works differently and I perform better under pressure than most people do</td>
-<td>General</td>
-<td>Energy &amp; working under pressure</td>
-</tr>
-<tr>
-<th>60</th>
-<td>I must repeat everything (skills, practice questions, etc.) until I have it absolutely perfect, so I am usually very good at tests. Also I am very observant because I am hyper-aware of the environment and touch/sound sensations. I am not very forgetful because I always count and check to make sure everything is correct.</td>
-<td>Studying</td>
-<td>Learning &amp; memory, Attention to detail &amp; observation, Organisation &amp; reliability</td>
-</tr>
-<tr>
-<th>61</th>
-<td>I am very detail oriented, I see the mistakes that other people don't notice. it's what overwhelms me in school and daily life, I am subconsciously my own worst critique to the point of dysfunction, but I am accurate with information. I think if only I can make it through to the specialization that fits my particular way of thinking, will it benefit me, but first I have to make it there.</td>
-<td>Both</td>
-<td>Attention to detail &amp; observation</td>
-</tr>
-<tr>
-<th>63</th>
-<td>Being able to hyper-focus has help me when studying for certain exams in a short amount of time.</td>
-<td>Studying</td>
-<td>Hyperfocus &amp; passion for interests, Learning &amp; memory</td>
-</tr>
-<tr>
-<th>66</th>
-<td>I don't really know how to answer cus it's not a precise yes/no It's kinda hard to know what is adhd and what is just my way of learning but I am very observant (needing to scan everything around me to feel safe/aware of my surroundings) which might be just that I'm a visual learner but I know I've noticed things quicker than my neurotypical friends so I'm hopeful it'll be useful once I'm a vet</td>
-<td>Both</td>
-<td>Attention to detail &amp; observation</td>
-</tr>
-<tr>
-<th>75</th>
-<td>Yes in both aspects due to unique way of thinking and problem solving. In practice you're on your feet the whole day and getting information from different types of sources which is where people with ADHD thrives.</td>
-<td>Vet practice</td>
-<td>Pattern recognition &amp; problem solving, Energy &amp; working under pressure</td>
-</tr>
-<tr>
-<th>78</th>
-<td>I can easily feel/read emotional states from other people, therefore I am very empathetic. I'm also hooked into specialized areas, so I'll continuously dive into my speciality</td>
-<td>General</td>
-<td>Empathy &amp; understanding others, Hyperfocus &amp; passion for interests</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=190cd53f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -11066,7 +10836,32 @@ Professors (24) vs teaching style (23): Spearman ρ = 0.60
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Strengths-by-theme-and-context">Strengths by theme and context<a class="anchor-link" href="#Strengths-by-theme-and-context">¶</a></h3><p><strong>Columns used</strong></p>
 <ul>
-<li>The coded answers to column 54 from the previous table (24 answers, 37 mentions).</li>
+<li>Column 54 (open question): the 24 neurodivergent students who described their strengths. Non-ND students were asked to skip it.</li>
+</ul>
+<p><strong>How the answers were categorised</strong></p>
+<ul>
+<li><strong>Every answer was read by hand</strong> and given two kinds of category: the <strong>strength themes</strong> it describes and the <strong>context</strong> where the strength helps. The categories are written in the code cell below, one line per answer.</li>
+<li><strong>Strength themes were not fixed in advance.</strong> After reading all the answers, similar strengths were grouped under one name. For example <em>"hyperfocus"</em>, <em>"special interest"</em> and <em>"more passion for what I love"</em> all became <strong>Hyperfocus &amp; passion for interests</strong>. This gave 9 themes:<ul>
+<li>Hyperfocus &amp; passion for interests</li>
+<li>Pattern recognition &amp; problem solving</li>
+<li>Empathy &amp; understanding others</li>
+<li>Attention to detail &amp; observation</li>
+<li>Creative, out-of-the-box thinking</li>
+<li>Learning &amp; memory</li>
+<li>Energy &amp; working under pressure</li>
+<li>Organisation &amp; reliability</li>
+<li>Adaptability &amp; resilience</li>
+</ul>
+</li>
+<li><strong>One answer can name several strengths</strong>, so it can have more than one theme: 12 answers have one theme, 11 have two and 1 has three. That is why the 24 answers give <strong>37 mentions</strong>, and why the theme counts add up to more than 24.</li>
+<li><strong>Each answer has only one context</strong>:<ul>
+<li><strong>Studying</strong>: learning, exams or university tasks (5 answers).</li>
+<li><strong>Vet practice</strong>: clinical work, clients, animals or diagnosis (6 answers).</li>
+<li><strong>Both</strong>: the answer names a study context and a vet-practice context (5 answers).</li>
+<li><strong>General</strong>: no specific context is given (8 answers).</li>
+</ul>
+</li>
+<li><strong>Checks in the code</strong>: every ND answer to column 54 must have categories, and each line of categories must match the first words of its answer, so a category cannot end up on the wrong row.</li>
 </ul>
 <p><strong>What the graph shows (visual table)</strong></p>
 <ul>
