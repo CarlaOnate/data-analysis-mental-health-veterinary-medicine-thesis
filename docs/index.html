@@ -7428,7 +7428,21 @@ main {
     }
     init_mathjax();
     </script>
-<!-- End of mathjax configuration --><!-- Reveal Theme -->
+<!-- End of mathjax configuration --><style>
+  /* Each slide fills the window; the inner section (the actual slide) is the scroll box */
+  .reveal .slides > section {
+    height: 100% !important;
+    top: 0 !important;
+    padding: 0;
+  }
+  .reveal .slides > section > section {
+    height: 100% !important;
+    top: 0 !important;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 24px 40px 56px; /* bottom room for the controls and slide number */
+  }
+</style><!-- Reveal Theme -->
 <link href="https://unpkg.com/reveal.js@4.0.2/dist/theme/simple.css" id="theme" rel="stylesheet"/>
 </head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
@@ -11900,7 +11914,6 @@ require(
     ],
 
     function(Reveal, RevealNotes){
-        // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
         Reveal.initialize({
             controls: true,
             progress: true,
@@ -11908,9 +11921,13 @@ require(
             transition: "slide",
             slideNumber: "c/t",
             plugins: [RevealNotes],
-            width: 960,
-			      height: 700,
-
+            // Fill the window without scaling, so the slide is exactly as tall as the screen
+            width: "100%",
+            height: "100%",
+            margin: 0,
+            minScale: 1,
+            maxScale: 1,
+            center: false,
         });
 
         var update = function(event){
@@ -11920,23 +11937,6 @@ require(
         };
 
         Reveal.addEventListener('slidechanged', update);
-
-        function setScrollingSlide() {
-            var scroll = true
-            if (scroll === true) {
-              var h = $('.reveal').height() * 0.95;
-              $('section.present').find('section')
-                .filter(function() {
-                  return $(this).height() > h;
-                })
-                .css('height', 'calc(95vh)')
-                .css('overflow-y', 'scroll')
-                .css('margin-top', '20px');
-            }
-        }
-
-        // check and set the scrolling slide every time the slide change
-        Reveal.addEventListener('slidechanged', setScrollingSlide);
     }
 );
 </script>
